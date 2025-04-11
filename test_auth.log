@@ -1,0 +1,4 @@
+Apr 11 15:23:01 ubuntu sshd[12345]: Failed password for root from 192.168.1.10 port 22 ssh2
+Apr 11 15:24:02 ubuntu sshd[12345]: Invalid user admin from 10.0.0.2 port 2222
+Apr 11 15:25:10 ubuntu su[54321]: session opened for user root by (uid=0)
+Apr 11 16:00:00 ubuntu sudo: user : TTY=pts/1 ; USER=root ; COMMAND=/bin/bash script.sh

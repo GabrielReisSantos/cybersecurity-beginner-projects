@@ -1,0 +1,17 @@
+[2025-04-11 14:57:46.099837] Failed SSH login: Apr 11 15:23:01 ubuntu sshd[12345]: Failed password for root from 192.168.1.10 port 22 ssh2
+[2025-04-11 14:57:46.922067] Invalid user: Apr 11 15:24:02 ubuntu sshd[12345]: Invalid user admin from 10.0.0.2 port 2222
+[2025-04-11 14:57:47.319539] Root login: Apr 11 15:25:10 ubuntu su[54321]: session opened for user root by (uid=0)
+[2025-04-11 14:57:47.842466] Sudo use: Apr 11 16:00:00 ubuntu sudo: user : TTY=pts/1 ; USER=root ; COMMAND=/bin/bash script.sh
+[2025-04-11 14:57:48.456138] Suspicious script run: Apr 11 16:00:00 ubuntu sudo: user : TTY=pts/1 ; USER=root ; COMMAND=/bin/bash script.sh
+[2025-04-11 15:00:10.630655] Failed SSH login: [2025-04-11 14:57:46.099837] Failed SSH login: Apr 11 15:23:01 ubuntu sshd[12345]: Failed password for root from 192.168.1.10 port 22 ssh2
+[2025-04-11 15:00:11.308913] Invalid user: [2025-04-11 14:57:46.922067] Invalid user: Apr 11 15:24:02 ubuntu sshd[12345]: Invalid user admin from 10.0.0.2 port 2222
+[2025-04-11 15:00:11.920044] Root login: [2025-04-11 14:57:47.319539] Root login: Apr 11 15:25:10 ubuntu su[54321]: session opened for user root by (uid=0)
+[2025-04-11 15:00:12.341661] Sudo use: [2025-04-11 14:57:47.842466] Sudo use: Apr 11 16:00:00 ubuntu sudo: user : TTY=pts/1 ; USER=root ; COMMAND=/bin/bash script.sh
+[2025-04-11 15:00:12.850182] Suspicious script run: [2025-04-11 14:57:47.842466] Sudo use: Apr 11 16:00:00 ubuntu sudo: user : TTY=pts/1 ; USER=root ; COMMAND=/bin/bash script.sh
+[2025-04-11 15:00:13.244189] Sudo use: [2025-04-11 14:57:48.456138] Suspicious script run: Apr 11 16:00:00 ubuntu sudo: user : TTY=pts/1 ; USER=root ; COMMAND=/bin/bash script.sh
+[2025-04-11 15:00:13.737918] Suspicious script run: [2025-04-11 14:57:48.456138] Suspicious script run: Apr 11 16:00:00 ubuntu sudo: user : TTY=pts/1 ; USER=root ; COMMAND=/bin/bash script.sh
+[2025-04-11 15:04:31.505634] Failed SSH login: Apr 11 15:23:01 ubuntu sshd[12345]: Failed password for root from 192.168.1.10 port 22 ssh2
+[2025-04-11 15:04:32.432722] Invalid user: Apr 11 15:24:02 ubuntu sshd[12345]: Invalid user admin from 10.0.0.2 port 2222
+[2025-04-11 15:04:33.044939] Root login: Apr 11 15:25:10 ubuntu su[54321]: session opened for user root by (uid=0)
+[2025-04-11 15:04:33.657755] Sudo use: Apr 11 16:00:00 ubuntu sudo: user : TTY=pts/1 ; USER=root ; COMMAND=/bin/bash script.sh
+[2025-04-11 15:04:34.272300] Suspicious script run: Apr 11 16:00:00 ubuntu sudo: user : TTY=pts/1 ; USER=root ; COMMAND=/bin/bash script.sh

@@ -1,35 +1,62 @@
-# Beginner Cybersecurity Projects
+# Log Analyzer with Alerts
 
-Welcome to my collection of beginner-friendly cybersecurity projects!  
-These small but practical exercises are part of my journey to build strong foundational skills in cybersecurity.
-
-Each project focuses on core concepts like system security, encryption, and scripting. Helping me get hands-on experience while exploring real-world use cases.
-
-## Projects Included
-
-1. **Basic Firewall Setup**  
-   Learn how to configure a simple firewall on Linux using `ufw` to manage and secure incoming/outgoing traffic.
-
-2. **Password Strength Checker**  
-   A Python script that analyzes password complexity and provides feedback on how to improve password security.
-
-3. **Secure File Encryption Tool**  
-   A Python tool that encrypts files using symmetric encryption (e.g., AES) to ensure data confidentiality.
-
-## Why These Projects?
-
-While simple, these projects help me:
-- Practice foundational cybersecurity concepts
-- Get comfortable with Linux and Python
-- Explore tools and techniques used in real-world environments
-- Build the habit of writing clean, functional code
-
-## What’s Next?
-
-As I continue learning, I’ll keep adding more small projects and improvements here.  
-Follow along or fork the repo if you'd like to try them yourself!
+A real-world style Python tool that analyzes system logs for security alerts and sends notifications via **Email** and **Discord**.
 
 ---
 
-Thanks for stopping by. Feel free to explore, clone, or connect with me.  
-**Let’s secure the digital world together. Stay safe, kiddos!** 👾  
+## Features
+
+- Detects:
+  - Failed SSH logins
+  - Root access
+  - Invalid login attempts
+  - `sudo` command usage
+  - Suspicious `.sh` script execution
+- Sends alerts via:
+  - Email (Gmail App Passwords)
+  - Discord Webhook
+- Appends all alerts to `alerts.log`
+
+---
+
+## Setup
+
+### 1. Install dependencies
+```bash
+pip install requests
+```
+
+### 2. Configure Email and Webhook
+Edit the `log_analyzer.py` file:
+- Replace `EMAIL_ADDRESS`, `EMAIL_PASSWORD` (Gmail App Password)
+- Replace `DISCORD_WEBHOOK_URL` with your webhook URL
+
+---
+
+## Run the Tool
+
+```bash
+python3 log_analyzer.py
+```
+
+---
+
+## Sample Log for Testing
+
+Use `test_auth.log`:
+```bash
+LOG_FILE = "test_auth.log"
+```
+
+You can simulate activity like:
+```bash
+echo "Apr 11 16:00:00 ubuntu sudo: user : TTY=pts/1 ; USER=root ; COMMAND=/bin/bash script.sh" >> test_auth.log
+```
+
+---
+
+## Disclaimer
+
+This tool is for **educational use only**. Don't monitor or scan systems without permission.
+
+---
