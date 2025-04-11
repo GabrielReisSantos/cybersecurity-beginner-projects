@@ -1,62 +1,32 @@
-# Log Analyzer with Alerts
+Beginner Cybersecurity Projects
 
-A real-world style Python tool that analyzes system logs for security alerts and sends notifications via **Email** and **Discord**.
+Welcome to my collection of beginner-friendly cybersecurity projects!These small but practical exercises are part of my journey to build strong foundational skills in cybersecurity.
 
----
+Each project focuses on core concepts like system security, encryption, and scripting. Helping me get hands-on experience while exploring real-world use cases.
 
-## Features
+🛠️ Projects Included
 
-- Detects:
-  - Failed SSH logins
-  - Root access
-  - Invalid login attempts
-  - `sudo` command usage
-  - Suspicious `.sh` script execution
-- Sends alerts via:
-  - Email (Gmail App Passwords)
-  - Discord Webhook
-- Appends all alerts to `alerts.log`
+- Basic Firewall Setup: Learn how to configure a simple firewall on Linux using ufw to manage and secure incoming/outgoing traffic.
 
----
+- Password Strength Checker: A Python script that analyzes password complexity and provides feedback on how to improve password security.
 
-## Setup
+- Secure File Encryption Tool: A Python tool that encrypts files using symmetric encryption (e.g., AES) to ensure data confidentiality.
 
-### 1. Install dependencies
-```bash
-pip install requests
-```
+- Log Analyzer with Alerts: A real-world style Python tool that analyzes system logs for security alerts and sends notifications via Email and Discord.
 
-### 2. Configure Email and Webhook
-Edit the `log_analyzer.py` file:
-- Replace `EMAIL_ADDRESS`, `EMAIL_PASSWORD` (Gmail App Password)
-- Replace `DISCORD_WEBHOOK_URL` with your webhook URL
+🧠 Why These Projects?
 
----
+While simple, these projects help me:
 
-## Run the Tool
+- Practice foundational cybersecurity concepts
 
-```bash
-python3 log_analyzer.py
-```
+- Get comfortable with Linux and Python
 
----
+- Explore tools and techniques used in real-world environments
 
-## Sample Log for Testing
+- Build the habit of writing clean, functional code
 
-Use `test_auth.log`:
-```bash
-LOG_FILE = "test_auth.log"
-```
+📌 What’s Next?
 
-You can simulate activity like:
-```bash
-echo "Apr 11 16:00:00 ubuntu sudo: user : TTY=pts/1 ; USER=root ; COMMAND=/bin/bash script.sh" >> test_auth.log
-```
-
----
-
-## Disclaimer
-
-This tool is for **educational use only**. Don't monitor or scan systems without permission.
-
----
+As I continue learning, I’ll keep adding more small projects and improvements here.
+Follow along or fork the repo if you'd like to try them yourself!
